@@ -8,6 +8,7 @@ using System.Web;
 
 namespace INTEX.Models
 {
+    [Table("WORK_ORDER")]
     public class Work_Order
     {
         [Key]

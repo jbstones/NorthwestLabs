@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace INTEX.Models
 {
+    [Table("CUSTOMER")]
     public class Customers
     {
         [Key]
@@ -33,5 +35,7 @@ namespace INTEX.Models
 
         [DisplayName("Email")]
         public String email { get; set; }
+
+        //GET BACK TO WORK-------------
     }
 }

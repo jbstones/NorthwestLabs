@@ -8,6 +8,7 @@ using System.Web;
 
 namespace INTEX.Models
 {
+    [Table("INVOICE")]
     public class Invoice
     {
         [Key]
@@ -19,7 +20,7 @@ namespace INTEX.Models
         public int workOrderID { get; set; }
 
         [DisplayName("Amount Due")]
-        public String AmountDue { get; set; }
+        public decimal AmountDue { get; set; }
 
         [DisplayName("Due date")]
         public String datepaymentdue { get; set; }

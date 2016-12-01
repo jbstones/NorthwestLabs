@@ -165,20 +165,34 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Assay.cs" />
+    <Compile Include="Models\Assay_description.cs" />
     <Compile Include="Models\Compounds.cs" />
+    <Compile Include="Models\Compounds\Compounds.cs" />
+    <Compile Include="Models\Compounds\Compounds_Assays.cs" />
+    <Compile Include="Models\Compounds\Compound_Receipt.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Payments\Invoice.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Payments\Payment.cs" />
+    <Compile Include="Models\Test\Materials.cs" />
+    <Compile Include="Models\Test\Test.cs" />
+    <Compile Include="Models\Test\Test_Description.cs" />
+    <Compile Include="Models\Test\Test_Materials.cs" />
+    <Compile Include="Models\Test\Test_Materials_Used.cs" />
+    <Compile Include="Models\Test\Test_Results.cs" />
+    <Compile Include="Models\Test\Test_Schedule.cs" />
     <Compile Include="Models\Work_Order.cs" />
+    <Compile Include="Models\Work_Order_Schedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\NorthwestLabsStyleSheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -234,6 +248,23 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\YourAccount.cshtml" />
+    <Content Include="Views\Home\Assays.cshtml" />
+    <Content Include="Views\Home\Catalog.cshtml" />
+    <Content Include="Views\Shared\_EmployeeLoginLayoutPage.cshtml" />
+    <Content Include="Views\Shared\_SeattleLayoutPage.cshtml" />
+    <Content Include="Views\Shared\_SingaporeLayoutPage.cshtml" />
+    <Content Include="Views\Home\WorkOrderSeattle.cshtml" />
+    <Content Include="Views\Home\WorkOrderSingapore.cshtml" />
+    <Content Include="Views\Home\Schedule.cshtml" />
+    <Content Include="Views\Home\Logs.cshtml" />
+    <Content Include="Views\Home\Results.cshtml" />
+    <Content Include="Views\Home\Reports.cshtml" />
+    <Content Include="Views\Home\CustomerAccounts.cshtml" />
+    <Content Include="Views\Home\EmployeeViewCatalog.cshtml" />
+    <Content Include="Views\Home\SingaporeIndex.cshtml" />
+    <Content Include="Views\Home\SeattleIndex.cshtml" />
+    <Content Include="Views\Home\Employee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

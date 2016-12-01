@@ -1,6 +1,4 @@
-﻿<link href="~/Content/NorthwestLabsStyleSheet.css" rel="stylesheet" />
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,14 +18,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Northwest Labs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Seattle", "SeattleIndex", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Your Account", "YourAccount", "Home")</li>
-                    <li>@Html.ActionLink("Assays", "Assays", "Home")</li>
-                    <li>@Html.ActionLink("Catalog", "Catalog", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Work Order", "WorkOrderSeattle", "Home")</li>
+                    <li>@Html.ActionLink("Reports", "Reports", "Home")</li>
+                    <li>@Html.ActionLink("Customer Accounts", "Customer Accounts", "Home")</li>
+                    <li>@Html.ActionLink("Catalog", "EmployeeViewCatalog", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -46,3 +44,4 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
