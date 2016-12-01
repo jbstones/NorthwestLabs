@@ -39,13 +39,15 @@ namespace INTEX.Controllers
             return View();
         }
 
+
+
         [HttpPost]
         public ActionResult Login(FormCollection form, bool rememberMe = false)
         {
             String email = form["Username"].ToString();
             String password = form["Password"].ToString();
 
-            if (string.Equals(email, "Employee") && (string.Equals(password, "Password")))
+            if (string.Equals(email, "Employee") && (string.Equals(password, "Login")))
             {
                 FormsAuthentication.SetAuthCookie(email, rememberMe);
 
@@ -56,9 +58,32 @@ namespace INTEX.Controllers
             {
                 return View();
             }
-
-
         }
+
+        public ActionResult LoginCustomer()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult LoginCustomer(FormCollection form, bool rememberMe = false)
+        {
+            String email = form["Username"].ToString();
+            String password = form["Password"].ToString();
+
+            if (string.Equals(email, "Customer") && (string.Equals(password, "Login")))
+            {
+                FormsAuthentication.SetAuthCookie(email, rememberMe);
+
+                return RedirectToAction("Customer", "Home");
+
+            }
+            else
+            {
+                return View();
+            }
+        }
+
 
         // GET
         [Authorize]
@@ -67,6 +92,15 @@ namespace INTEX.Controllers
 
             return View();
         }
+
+        //GET
+        [Authorize]
+        public ActionResult Customer()
+        {
+
+            return View();
+        }
+
 
         public ActionResult Assays()
         {
@@ -79,6 +113,22 @@ namespace INTEX.Controllers
         }
 
         public ActionResult YourAccount()
+        {
+            return View();
+        }
+
+        //CUSTOMER VIEWS
+        public ActionResult WorkOrder()
+        {
+            return View();
+        }
+
+        public ActionResult AccountBalance()
+        {
+            return View();
+        }
+
+        public ActionResult MakeAPayment()
         {
             return View();
         }

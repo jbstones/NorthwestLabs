@@ -18,8 +18,26 @@ else
     <ul class="nav navbar-nav navbar-right">
         <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>
-            <a href="#" data-toggle="modal" data-target="#mymodal">Employee Login</a>
-            <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <a href="#" data-toggle="modal" data-target="#mymodaltwo">Customer Login</a>
+            <div class="modal fade" id="mymodaltwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="loginmodal-container">
+                        <h1>Login to Your Account</h1><br>
+                        @using (Html.BeginForm("LoginCustomer", "Home", FormMethod.Post))
+                        {
+                            <label for="inputEmail">Username</label>
+                            @Html.TextBox("Username")
+                            <label for="inputPassword">Password</label>
+                            @Html.Password("Password")
+                            <button type="submit">Login</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#" data-toggle="modal" data-target="#mymodalthree">Employee Login</a>
+            <div class="modal fade" id="mymodalthree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog">
                     <div class="loginmodal-container">
                         <h1>Login to Your Account</h1><br>
