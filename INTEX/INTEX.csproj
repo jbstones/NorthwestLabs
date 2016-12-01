@@ -168,9 +168,6 @@
     <Compile Include="Models\Assay.cs" />
     <Compile Include="Models\Assay_description.cs" />
     <Compile Include="Models\Compounds.cs" />
-    <Compile Include="Models\Compounds\Compounds.cs" />
-    <Compile Include="Models\Compounds\Compounds_Assays.cs" />
-    <Compile Include="Models\Compounds\Compound_Receipt.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\IdentityModels.cs" />
