@@ -6,3 +6,93 @@
 
 <h2>Results</h2>
 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer #</th>
+            <th>Work Order #</th>
+            <th>LT #</th>
+            <th>Sequence Code</th>
+            <th>Test Id #</th>
+            <th>Status</th>
+            <th>Raw results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">001</th>
+            <td>001</td>
+            <td>00001</td>
+            <td>01001</td>
+            <td>010101</td>
+            <td>Pass</td>
+            <td><input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"></td>
+        </tr>
+        <tr>
+            <th scope="row">002</th>
+            <td>002</td>
+            <td>00002</td>
+            <td>02001</td>
+            <td>020101</td>
+            <td>Failed</td>
+            <td><input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"></td>
+        </tr>
+        <tr>
+            <th scope="row">003</th>
+            <td>003</td>
+            <td>00003</td>
+            <td>03003</td>
+            <td>030103</td>
+            <td>Pass</td>
+            <td><input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"></td>
+        </tr>
+    </tbody>
+</table>
+
+<!--MY MODAL LOGIN -->
+<div class="container">
+    <div align="center">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-1">Save results</button>
+    </div>
+    <div class="modal" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dissmiss="modal"></button>
+                    <h3 class="modal-title, text-center">Update Test results</h3>
+                </div>
+
+                <div class="modal-body">
+
+
+                    <h4 class="text-center">
+                        The following action will update the test results into the database and send an email notification to customer.
+                    </h4>
+
+                    <small>
+                        * An email will be sent to the Seattle Office and each respective customer will be notified.
+                    </small>
+
+                    @using (Html.BeginForm("Results", "Home", FormMethod.Post))
+                    {
+
+                        <!--
+                        <label>
+                            <input type="checkbox"> I agree to the Terms and Conditions
+                        </label>-->
+
+                        <br />
+                        <div align="center">
+                            <button class="btn btn-danger" type="submit">Update</button>
+                        </div>
+
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

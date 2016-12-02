@@ -18,13 +18,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Northwest Labs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Seattle", "SeattleIndex", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Offices", "Employee", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Work Order", "WorkOrderSeattle", "Home")</li>
                     <li>@Html.ActionLink("Reports", "Reports", "Home")</li>
-                    <li>@Html.ActionLink("Customer Accounts", "Customer Accounts", "Home")</li>
+                    <li>@Html.ActionLink("Customer Accounts", "CustomerAccounts", "Home")</li>
                     <li>@Html.ActionLink("Catalog", "EmployeeViewCatalog", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -34,8 +34,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="text-right">
+            <p>Northwest Labs - &copy; @DateTime.Now.Year</p>
         </footer>
     </div>
 

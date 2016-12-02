@@ -108,3 +108,5 @@ c:\users\delllappy13\documents\visual studio 2013\Projects\INTEX\INTEX\obj\Debug
 \\Mac\Home\Documents\Visual Studio 2013\Projects\INTEX\INTEX\obj\Debug\INTEX.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\Visual Studio 2013\Projects\INTEX\INTEX\obj\Debug\INTEX.dll
 \\Mac\Home\Documents\Visual Studio 2013\Projects\INTEX\INTEX\obj\Debug\INTEX.pdb
+\\Mac\Home\Documents\Visual Studio 2013\Projects\INTEX\INTEX\obj\Debug\INTEX.Properties.Resources.resources
+\\Mac\Home\Documents\Visual Studio 2013\Projects\INTEX\INTEX\obj\Debug\INTEX.csproj.GenerateResource.Cache

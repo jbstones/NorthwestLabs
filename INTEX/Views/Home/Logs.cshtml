@@ -4,5 +4,76 @@
     Layout = "~/Views/Shared/_SingaporeLayoutPage.cshtml";
 }
 
-<h2>Logs</h2>
+<h2>Compound Receipt Log</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>LT Number</th>
+            <th>Sequence Code</th>
+            <th>Reception Date</th>
+            <th>Received By </th>
+            <th>Due Date</th>
+            <th>Actual Weight</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">001</th>
+            <td>000001</td>
+            <td>01001</td>
+            <td>11/02/2016</td>
+            <td>Cameron Smith</td>
+            <td>12/02/2016</td>
+            <td>300 g</td>
+        </tr>
+        <tr>
+            <th scope="row">002</th>
+            <td>000001</td>
+            <td>01002</td>
+            <td>11/05/2016</td>
+            <td>Jonathan Smith</td>
+            <td>12/02/2016</td>
+            <td>300 g</td>
+        </tr>
+        <tr>
+            <th scope="row">003</th>
+            <td>000002</td>
+            <td>02001</td>
+            <td>11/05/2016</td>
+            <td>Matt Smith</td>
+            <td>12/02/2016</td>
+            <td>300 g</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 style="padding-top:50px;">Manual Entry Form</h2>
+
+<form>
+    <div class="form-group">
+        <label for="exampleSelect2">Select LT Number</label>
+        <select class="form-control" id="exampleSelect2">
+            <option>000001</option>
+            <option>000002</option>
+            <option>000003</option>
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Sequence Code</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Sequence #">
+    </div>
+
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Received by</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Employee name">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Report</button> <button type="submit" class="btn btn-primary">Export Log</button>
+    
+</form>
+
 

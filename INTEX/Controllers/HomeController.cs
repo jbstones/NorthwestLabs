@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INTEX.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,11 @@ namespace INTEX.Controllers
 {
     public class HomeController : Controller
     {
+        private NorthwestContext db = new NorthwestContext();
+
         public ActionResult Index()
         {
-            return View();
+            return View(); 
         }
 
         public ActionResult About()
@@ -123,12 +126,22 @@ namespace INTEX.Controllers
             return View();
         }
 
+        public ActionResult ExistingWorkOrder()
+        {
+            return View();
+        }
+
         public ActionResult AccountBalance()
         {
             return View();
         }
 
         public ActionResult MakeAPayment()
+        {
+            return View();
+        }
+
+        public ActionResult Orderconfirmation()
         {
             return View();
         }
@@ -181,6 +194,11 @@ namespace INTEX.Controllers
         }
 
         public ActionResult EmployeeViewCatalog()
+        {
+            return View();
+        }
+
+        public ActionResult SummaryReport()
         {
             return View();
         }

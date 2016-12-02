@@ -3,6 +3,28 @@
     ViewBag.Title = "Employee";
     Layout = "~/Views/Shared/_EmployeeLoginLayoutPage.cshtml";
 }
+<link href="~/Content/NorthwestLabsStyleSheet.css" rel="stylesheet" />
+<h1>Select Your City</h1>
 
-<h2>Employee</h2>
+<div class="jumbotron" id="cityjumbo">
+    <div class="container">
+        <div class="row">
+            <figure class="text-left col-sm-6">
+                    <p style="color: white">
+                        <center>Seattle</center>
+                    </p>  
+                    <a href="@Url.Action("SeattleIndex", "Home")"><img class="city-styling" id="cityimage" src="~/Content/Seattle.jpg" /></a>
+            </figure>
+
+            <figure class="text-right col-sm-6">
+                    <p style="color: white">
+                        <center>Singapore</center>
+                    </p>
+                    <a href="@Url.Action("SingaporeIndex", "Home")"><img class="city-styling" id="cityimage" src="~/Content/Singapore.jpg" /></a>
+            </figure>
+          
+
+        </div>
+    </div>
+</div>
 

@@ -2,30 +2,44 @@
     ViewBag.Title = "Home Page";
 }
 <link href="~/Content/NorthwestLabsStyleSheet.css" rel="stylesheet" />
-<div class="jumbotron">
-    <h1 class="text-center">Northwest Labs</h1>
-    <p class="lead">Schedule an assay today!</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="jumbotron" id="mainjumbo">
+        <div class="row">
+            <h1 class="lead text-left col-sm-12">Northwest Labs</h1>
+            @*<h2 class="col-sm-12" style="color:black">Schedule an assay today!</h2>*@
+        </div>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that  
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-4 text-center">
+        <a href="@Url.Action("Assays", "Home")"><button type="button" class="btn btn-secondary btn-lg">Assays</button></a>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-md-4 text-center">
+        <a href="@Url.Action("Catalog", "Home")"><button type="button" class="btn btn-secondary btn-lg">Catalog</button></a>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-4 text-center">
+        <a href="@Url.Action("About", "Home")"><button type="button" class="btn btn-secondary btn-lg">About Us</button></a>
     </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+    <h2>News</h2>
+    <div class="col-md-4 text-center">
+        <p>Genes, Early Environment Sculpt the Gut Microbiome</p>
+        <img src="~/Content/gut-microbiome670-290x160.jpeg" />
+    </div>
+    <div class="col-md-4 text-center">
+        <p>X-Rays Capture Unprecedented Images of Photosynthesis in Action</p>
+        <img src="~/Content/photosynthesis-cropped.jpg" />
+    </div>
+    <div class="col-md-4 text-center">
+        <p>New Discoveries in Celular Regeneration</p>
+        <img src="~/Content/lbnf-dune-thumb.jpg" />
+    </div>
+
+
+            </div>

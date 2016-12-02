@@ -3,6 +3,25 @@
     ViewBag.Title = "Reports";
     Layout = "~/Views/Shared/_SeattleLayoutPage.cshtml";
 }
-
+<link href="~/Content/NorthwestLabsStyleSheet.css" rel="stylesheet" />
 <h2>Reports</h2>
+
+<div>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <p>Numeric Data Report</p>
+            <a href="@Url.Action("Index", "Home")">
+                <img class="reportpic" src="~/Content/reports_overview_hero.jpg.460x230_q95_autocrop_crop_upscale.jpg" /></a>
+        </div>
+        <div class="col-md-4 text-center">
+            <p>Summary Report</p>
+            <a href="@Url.Action("SummaryReport", "Home")">
+                <img class="reportpic" src="~/Content/reports_overview_hero.jpg.460x230_q95_autocrop_crop_upscale.jpg" /></a>
+        </div>
+        <div class="col-md-4 text-center">
+            <p>Past Reports</p>
+            <a href="@Url.Action("Index", "Home")"><img class="reportpic" src="~/Content/reports_overview_hero.jpg.460x230_q95_autocrop_crop_upscale.jpg" /></a>
+        </div>
+    </div>
+</div>
 

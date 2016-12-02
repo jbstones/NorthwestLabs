@@ -161,19 +161,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DAL\NorthwestContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Assay.cs" />
     <Compile Include="Models\Assay_description.cs" />
-    <Compile Include="Models\Compounds.cs" />
+    <Compile Include="Models\Compounds\Compounds.cs" />
+    <Compile Include="Models\Compounds\Compounds_Assays.cs" />
+    <Compile Include="Models\Compounds\Compound_Receipt.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Payments\Invoice.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Payments\Payment.cs" />
+    <Compile Include="Models\Payments\Payment_Method.cs" />
     <Compile Include="Models\Test\Materials.cs" />
     <Compile Include="Models\Test\Test.cs" />
     <Compile Include="Models\Test\Test_Description.cs" />
@@ -187,9 +191,20 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\2000px-Checkmark_green.svg.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\clipped.jpg" />
+    <Content Include="Content\Home Jumbo Tron.png" />
+    <Content Include="Content\images.jpg" />
+    <Content Include="Content\imgres.jpg" />
+    <Content Include="Content\maxresdefault.jpg" />
     <Content Include="Content\NorthwestLabsStyleSheet.css" />
+    <Content Include="Content\red-square-3-clip-art-vector-graphics-download-vector-clip-art-Nl9wkB-clipart.jpg" />
+    <Content Include="Content\Seattle.jpg" />
+    <Content Include="Content\Singapore.jpg" />
+    <Content Include="Content\slate.jpg" />
+    <Content Include="Content\Test-Tubes.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -208,6 +223,10 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Content\reports_overview_hero.jpg.460x230_q95_autocrop_crop_upscale.jpg" />
+    <Content Include="Content\gut-microbiome670-290x160.jpeg" />
+    <Content Include="Content\lbnf-dune-thumb.jpg" />
+    <Content Include="Content\photosynthesis-cropped.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -267,6 +286,9 @@
     <Content Include="Views\Home\AccountBalance.cshtml" />
     <Content Include="Views\Home\MakeAPayment.cshtml" />
     <Content Include="Views\Home\Customer.cshtml" />
+    <Content Include="Views\Home\SummaryReport.cshtml" />
+    <Content Include="Views\Home\ExistingWorkOrder.cshtml" />
+    <Content Include="Views\Home\Orderconfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -277,6 +299,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

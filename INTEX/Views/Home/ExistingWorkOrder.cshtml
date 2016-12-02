@@ -1,11 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "WorkOrderSingapore";
-    Layout = "~/Views/Shared/_SingaporeLayoutPage.cshtml";
+    ViewBag.Title = "ExistingWorkOrder";
+    Layout = "~/Views/Shared/_CustomerLayoutPage.cshtml";
 }
 <link href="~/Content/NorthwestLabsStyleSheet.css" rel="stylesheet" />
-<h2>Work Order Summary</h2>
 
+<div class="container" id="existingworkorder">
+    <h2>Existing Work Order</h2>
+</div>
 
 <!--WORK ORDER PROGRESS-->
 
@@ -46,7 +48,7 @@
 </div>
 
 <script type="text/javascript">
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
